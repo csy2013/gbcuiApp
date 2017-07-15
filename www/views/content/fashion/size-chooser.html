@@ -1,0 +1,14 @@
+<ion-list class="size-options-list">
+   <!-- <ion-radio name="chosen_size" ng-model="chosen_size" ng-value="'XS'">特小号</ion-radio>
+
+    <ion-radio name="chosen_size" ng-model="chosen_size" ng-value="'S'">小号</ion-radio>
+
+    <ion-radio name="chosen_size" ng-model="chosen_size" ng-value="'M'">中号</ion-radio>
+
+    <ion-radio name="chosen_size" ng-model="chosen_size" ng-value="'L'">大号</ion-radio>
+
+    <ion-radio name="chosen_size" ng-model="chosen_size" ng-value="'XL'">特大号</ion-radio>-->
+
+    <ion-radio ng-repeat="size in sizeList" name="chosen_size" ng-model="chosen_size"  ng-change="featureSizeChange(size)" ng-value="'{{ size.sizeId }}'">{{ size.sizeName }}</ion-radio>
+
+</ion-list>

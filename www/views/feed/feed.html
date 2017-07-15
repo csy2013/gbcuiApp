@@ -1,0 +1,43 @@
+<ion-view class="feed-view" cache-view="false">
+    <ion-header-bar class="feed-header">
+        <div class="logo-container"> <img class="logo-image" ng-src="./img/logo.png"/></div>
+        
+        <div class="buttons">
+            <button class="button button-clear cart-button" ui-sref="main.app.shopping-cart()"> <span
+                    class="badge cart-badge">{{ shoppingCartCount }}</span> <img class="cart-image"
+                                                                                   ng-src="./img/feed/cart-icon.png"/>
+            </button>
+            
+        </div>
+        
+    </ion-header-bar>
+    
+    <ion-content class="categories-feeds-content" has-bouncing="false" delegate-handle="feeds-content">
+        <sliding-list>
+            <ul center-edges class="sliding-list">
+                <sliding-item state="main.app.feed.fashion"> <a nav-transition="none"
+                                                                  ui-sref="main.app.feed.fashion()">时尚</a>
+                </sliding-item>
+                
+                <sliding-item state="main.app.feed.food"> <a nav-transition="none"
+                                                               ui-sref="main.app.feed.food()">餐饮</a>
+                </sliding-item>
+                
+                <sliding-item state="main.app.feed.travel"> <a nav-transition="none" ui-sref="main.app.feed.travel()">旅游</a>
+                </sliding-item>
+                
+                <sliding-item state="main.app.feed.deals"> <a nav-transition="none" ui-sref="main.app.feed.deals()">优惠</a>
+                </sliding-item>
+                
+                <sliding-item state="main.app.feed.real-state"> <a nav-transition="none"
+                                                                     ui-sref="main.app.feed.real-state()">中介地产</a>
+                </sliding-item>
+                
+            </ul>
+            
+        </sliding-list>
+        <ion-nav-view name="category-feed" class="category-feed"></ion-nav-view>
+        
+    </ion-content>
+    
+</ion-view>

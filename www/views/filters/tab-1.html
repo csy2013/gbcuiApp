@@ -1,0 +1,57 @@
+<ion-scroll direction="y" ng-controller="FiltersCtrl">
+    <div class="card list filter-group">
+        <div class="item item-divider"> 分类</div>
+
+        <ion-list class="category-filters filter-options-container">
+            <ion-radio name="category_filter" ng-model="category_filter" ng-value="'Fashion'"> <img
+                    class="category-icon fashion-icon" ng-src="./img/filters/category-filters_Fashion.png"/> <span>时尚</span>
+            </ion-radio>
+
+            <ion-radio name="category_filter" ng-model="category_filter" ng-value="'RealState'"> <img
+                    class="category-icon real-state-icon" ng-src="./img/filters/category-filters_RealState.png"/>
+                <span>房产中介</span>
+            </ion-radio>
+
+            <ion-radio name="category_filter" ng-model="category_filter" ng-value="'Travel'"> <img
+                    class="category-icon travel-icon" ng-src="./img/filters/category-filters_Travel.png"/> <span>旅游</span>
+            </ion-radio>
+
+            <ion-radio name="category_filter" ng-model="category_filter" ng-value="'Food'"> <img
+                    class="category-icon food-icon" ng-src="./img/filters/category-filters_Food.png"/>
+                <span>餐饮</span>
+            </ion-radio>
+
+            <ion-radio name="category_filter" ng-model="category_filter" ng-value="'Deals'"> <img
+                    class="category-icon deals-icon" ng-src="./img/filters/category-filters_Deals.png"/>
+                <span>优惠</span>
+            </ion-radio>
+
+        </ion-list>
+
+    </div>
+
+    <div class="card list filter-group">
+        <div class="item item-divider"> 标签</div>
+
+        <ion-list class="tags-filters filter-options-container">
+            <tag-checkbox ng-model="tags_filter.meat" title="肉类"></tag-checkbox>
+
+            <tag-checkbox ng-model="tags_filter.vegetables" title="蔬菜"></tag-checkbox>
+
+            <tag-checkbox ng-model="tags_filter.eggs" title="蛋"></tag-checkbox>
+
+            <tag-checkbox ng-model="tags_filter.breakfast" title="早餐"></tag-checkbox>
+
+            <tag-checkbox ng-model="tags_filter.asian" title="亚洲"></tag-checkbox>
+
+            <tag-checkbox ng-model="tags_filter.fruits" title="水果"></tag-checkbox>
+
+            <tag-checkbox ng-model="tags_filter.light" title="灯具"></tag-checkbox>
+
+            <tag-checkbox ng-model="tags_filter.mexican" title="墨西哥"></tag-checkbox>
+
+        </ion-list>
+
+    </div>
+
+</ion-scroll>

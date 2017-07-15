@@ -1,0 +1,25 @@
+<ion-popover-view class="geo-chooser-popover"
+                  ng-init="total_items = province_length"
+                  ng-class="{'contains-{{ total_items }}-items' : true, 'contains-more-than-6-items' : (total_items > 5), 'has-bottom-button' : !1  }">
+
+    <ion-content has-bouncing="false">
+        <ion-scroll class="geo-scroller" direction="y">
+            <div class="list geo-list">
+                <div class="geo-item row row-center" ng-repeat="geo in chnGeoList">
+                    <label class="col item item-radio">
+                        <input type="radio" name="pick_address"
+                               ng-model="address.paStateProvinceGeoId" ng-value="geo.id"
+                               ng-change="selectProvince(geo)">
+                        <div class="radio-content">
+                            <div class="item-content disable-pointer-events"><span class="geo-name">{{geo.name}}</span>
+                            </div>
+                            <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+        </ion-scroll>
+    </ion-content>
+
+</ion-popover-view>

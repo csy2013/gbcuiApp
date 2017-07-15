@@ -1,0 +1,45 @@
+{
+  "url": "http://gbcui.com/mobile-token/api/oauth.callback/qq?code=58E3CC2B4777BDFF5BB6C400DE270088&state=vrosfvft9gmc5onqr63spnk182",
+  "response": {
+    "data": {
+      "profileurl": "http://q.qlogo.cn/qqapp/101338896/B939275FE51AB3B5CDCF9B2E54851BEC/40",
+      "borthday": "1907",
+      "gender": "1",
+      "is_yellow_vip": "0",
+      "city": "南京",
+      "level": "0",
+      "openid": "B939275FE51AB3B5CDCF9B2E54851BEC",
+      "authtypeid": "qq",
+      "figureurl_2": "http://qzapp.qlogo.cn/qzapp/101338896/B939275FE51AB3B5CDCF9B2E54851BEC/100",
+      "figureurl_1": "http://qzapp.qlogo.cn/qzapp/101338896/B939275FE51AB3B5CDCF9B2E54851BEC/50",
+      "is_yellow_year_vip": "0",
+      "province": "江苏",
+      "figureurl": "http://qzapp.qlogo.cn/qzapp/101338896/B939275FE51AB3B5CDCF9B2E54851BEC/30",
+      "imageurl": "http://q.qlogo.cn/qqapp/101338896/B939275FE51AB3B5CDCF9B2E54851BEC/100",
+      "displayname": "风中尘埃",
+      "name": "风中尘埃",
+      "nickname": "风中尘埃",
+      "yellow_vip_level": "0",
+      "vip": "0"
+    },
+    "status": 200,
+    "config": {
+      "method": "POST",
+      "transformRequest": [
+        null
+      ],
+      "transformResponse": [
+        null
+      ],
+      "url": "http://gbcui.com/mobile-token/api/oauth.callbackresult/qq",
+      "params": {
+        "code": "58E3CC2B4777BDFF5BB6C400DE270088",
+        "state": "vrosfvft9gmc5onqr63spnk182"
+      },
+      "headers": {
+        "Accept": "application/json, text/plain, */*"
+      }
+    },
+    "statusText": "OK"
+  }
+}

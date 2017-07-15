@@ -1,0 +1,38 @@
+<ion-scroll direction="y" ng-controller="FiltersCtrl">
+    <div class="card list filter-group alt-filter-group">
+        <div class="item item-divider">配料</div>
+
+        <ion-list class="ingredients-filters filter-options-container">
+            <ion-checkbox ng-model="ingredients_filter.salmon">大马哈鱼</ion-checkbox>
+
+            <ion-checkbox ng-model="ingredients_filter.butter">黄油</ion-checkbox>
+
+            <ion-checkbox ng-model="ingredients_filter.rice">米饭</ion-checkbox>
+
+            <ion-checkbox ng-model="ingredients_filter.tomato">西红柿</ion-checkbox>
+
+            <ion-checkbox ng-model="ingredients_filter.lemon">柠檬</ion-checkbox>
+
+            <ion-checkbox ng-model="ingredients_filter.olive_oil">橄榄油</ion-checkbox>
+
+        </ion-list>
+
+    </div>
+
+    <div class="card list filter-group alt-filter-group">
+        <div class="item item-divider"> 显示</div>
+
+        <ion-list class="show-filters filter-options-container">
+            <ion-radio name="show_filter" ng-model="show_filter" ng-value="'Restaurants'">饭店</ion-radio>
+
+            <ion-radio name="show_filter" ng-model="show_filter" ng-value="'Cafes'">咖啡馆</ion-radio>
+
+            <ion-radio name="show_filter" ng-model="show_filter" ng-value="'Bars'">小店</ion-radio>
+
+            <ion-radio name="show_filter" ng-model="show_filter" ng-value="'Clubs'">俱乐部</ion-radio>
+
+        </ion-list>
+
+    </div>
+
+</ion-scroll>

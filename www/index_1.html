@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *; script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos; *; style-src  &apos;self&apos; &apos;unsafe-inline&apos; *">
+    <title></title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="https://maps.google.com/maps/api/js"></script>-->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!--<script src="js/modules.js"></script>-->
+    <!--<script src="js/modulesbak.js"></script>-->
+
+    <!--module 包含的js-->
+    <script src="./lib/moment/moment.js"></script>
+    <script src="./lib/angular-moment/angular-moment.js"></script>
+    <script src="./lib/ngmap/build/scripts/ng-map.min.js"></script>
+    <script src="./lib/ng-range-slider/dist/ng-range-slider.min.js"></script>
+    <script src="./lib/underscore/underscore.js"></script>
+    <!--后来增加的-->
+    <script src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="./lib/angular-messages/angular-messages.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="./js/app.js"></script>
+
+    <!--后来增加-->
+    <script src="./js/resource/resource.js"></script>
+    <script src="./js/resource/resource-service.js"></script>
+    <!--add by changsy at 20160525-->
+    <script src="./views/account/account.js"></script>
+    <script src="./views/auth/auth.js"></script>
+    <script src="./views/checkout/checkout.js"></script>
+    <script src="./views/common/common.js"></script>
+    <script src="./views/content/content.js"></script>
+    <script src="./views/feed/feed.js"></script>
+    <script src="./views/filters/filters.js"></script>
+    <script src="./views/liked/liked.js"></script>
+    <script src="./views/search/search.js"></script>
+    <script src="./views/shopping-cart/shopping-cart.js"></script>
+    <script src="./views/sort/sort.js"></script>
+    <script src="./views/walkthrough/walkthrough.js"></script>
+    <script src="./views/getting-started/getting-started.js"></script>
+    <script src="./js/pingpp.js"></script>
+    <script src="./js/share.js"></script>
+    <!--add by changsy at 20160525-->
+
+</head>
+<body ng-app="gbcui_shopApp" class="platform-cordova platform-webview">
+<ion-nav-view></ion-nav-view>
+</body>
+<script id="error-list.html" type="text/ng-template">
+    <div class="error" ng-message="required">
+        <i class="ion-information-circled"></i>
+        不能为空
+    </div>
+    <div class="error" ng-message="minlength">
+        <i class="ion-information-circled"></i>
+        不能小于3个字符
+    </div>
+    <div class="error" ng-message="maxlength">
+        <i class="ion-information-circled"></i>
+        不能大于20个字符
+    </div>
+    <div class="error" ng-message="email">
+        <i class="ion-information-circled"></i>
+        无效电子邮箱
+    </div>
+</script>
+</html>
